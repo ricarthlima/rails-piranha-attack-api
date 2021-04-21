@@ -3,7 +3,7 @@ namespace :dev do
     task setup: :environment do
     puts "Adding examples"
     1000.times do |i|
-        Score.create!(
+        ScoreRegister.create!(
         "username": Faker::Name.name,
         "score": rand(100..10000)
         )
